@@ -1,0 +1,33 @@
+{
+  "name": "netflix-be",
+  "version": "1.0.0",
+  "description": "Backend for Netflix Clone project, PostgreSQL as the database.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon -r dotenv/config src/server.js",
+    "prestart": "npm run create-tables",
+    "create-tables": "node -r dotenv/config ./src/utils/db/create-tables.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code4Wyatt/netflix-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code4Wyatt/netflix-be/issues"
+  },
+  "homepage": "https://github.com/Code4Wyatt/netflix-be#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "fs-extra": "^10.1.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0",
+    "uuid": "^8.3.2"
+  }
+}
