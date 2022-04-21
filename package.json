@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend for Netflix Clone project, PostgreSQL as the database.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon -r dotenv/config src/server.js",
