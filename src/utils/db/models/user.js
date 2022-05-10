@@ -21,10 +21,14 @@ const User = sequelize.define('User', {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    description: {
+    email: {
         type: DataTypes.STRING,
         allowNull: false,
-    }
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 });
 
 export default User;
